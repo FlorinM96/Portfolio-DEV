@@ -53,6 +53,7 @@
 
   }
 }
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #161616;
   background-color: #F4F4F4;
@@ -61,7 +62,7 @@
 }
 .nav-pills .nav-link {
   display: block;
-padding: 50px;
+  padding: 50px;
   color: #161616;
   text-decoration: none;
   transition: all 0.5s;
@@ -188,7 +189,7 @@ position: absolute;
   100% { left: 0; }
 }
 .icons-parallax{
-  background:linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 90%), url("../../assets/bg-photo.jpg");
+  background:linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 90%), url("../../assets/bg-photo-small.jpg");
   background-attachment: fixed;
   background-size:cover;
   background-position: center;
@@ -319,4 +320,56 @@ max-height: 115px;
 .cv_button{
   margin: 0 auto;
   max-width: 100% 
+}
+@media (max-width: 700px){
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    border-left:0rem;
+  }
+  .nav-pills .nav-link {
+    display: block;
+    padding: 10px;
+    color: #161616;
+    text-decoration: none;
+    transition: all 0.5s;
+    border-radius: 0;
+  
+  
+    background-color: transparent;
+    white-space: nowrap;
+  
+  }
+  .nav-pills .nav-link:hover{
+    background-color: #f8f8f8;
+  }
+  .tab-content-text {
+    font-family: 'Montserrat';
+  
+    display:block;
+    position:relative;
+    top:0;
+  
+  }
+  .desc-heading, .projects-hover , .na, .tab-content-image{
+    display:none;
+  }
+  .icon-container{
+    width: 50%;
+  }
+
+  .icons-heading{
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #F4F4F4;
+    margin:0 0 0 0;
+  
+  }
+  .featured-text-p{
+  text-align:left;
+  padding-top:10px;
+}
+.scroll-downs{
+  bottom: -300px;
+}
 }
